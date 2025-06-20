@@ -1,0 +1,14 @@
+fn main() {
+    let x = 10;
+    println!("x is: {}", x);
+
+    {
+        let x = 20;
+        println!("x inside block is: {}", x);
+    }
+
+    println!("x outside block is still: {}", x);
+
+    let x = "Hello";
+    println!("x is now: {}", x);
+}
