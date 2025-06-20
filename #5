@@ -1,0 +1,21 @@
+fn main() {
+    // a. Implicit type declaration
+    let a = 10;             // inferred as i32
+    let b = 3.14;           // inferred as f64
+    let c = true;           // inferred as bool
+    let d = "Hello";        // inferred as &str
+    let e = 'R';            // inferred as char
+
+    // b. Explicit type declaration
+    let x: i32 = 100;
+    let y: f32 = 2.5;
+    let z: bool = false;
+    let name: &str = "Rust";
+    let ch: char = 'A';
+    let num: u64 = 999_999_999;
+    let small: i8 = -10;
+    let float_num: f64 = 6.28;
+
+    println!("Implicit: {}, {}, {}, {}, {}", a, b, c, d, e);
+    println!("Explicit: {}, {}, {}, {}, {}, {}, {}, {}", x, y, z, name, ch, num, small, float_num);
+}
