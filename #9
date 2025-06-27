@@ -1,0 +1,13 @@
+const NAME: &str = "Rust";
+const VERSION: f32 = 1.76;
+const YEAR: i32 = 2025;
+const IS_STABLE: bool = true;
+const BYTES: u8 = 8;
+
+fn main() {
+    println!("Language: {}", NAME);
+    println!("Version: {}", VERSION);
+    println!("Year: {}", YEAR);
+    println!("Is Stable: {}", IS_STABLE);
+    println!("Bytes: {}", BYTES);
+}
