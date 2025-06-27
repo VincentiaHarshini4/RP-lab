@@ -1,0 +1,8 @@
+fn main() {
+    let num = 42;
+    let reference = &num;
+    let deref = *reference;
+
+    println!("Reference: {}", reference);
+    println!("Dereferenced: {}", deref);
+}
