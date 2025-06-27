@@ -1,0 +1,7 @@
+fn main() {
+    let person = ("Alice", 25, 5.6);
+
+    println!("Name: {}", person.0);
+    println!("Age: {}", person.1);
+    println!("Height: {}", person.2);
+}
