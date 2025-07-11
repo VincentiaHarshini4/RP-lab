@@ -1,0 +1,24 @@
+#Write a program to Multiplication Table using Loop Labels
+fn main() {
+    let mut i = 1;
+
+    'outer: loop {
+        let mut j = 1;
+
+        'inner: loop {
+            print!("{}\t", i * j);
+            j += 1;
+
+            if j > 10 {
+                break 'inner;
+            }
+        }
+
+        println!();
+        i += 1;
+
+        if i > 10 {
+            break 'outer;
+        }
+    }
+}
