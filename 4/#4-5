@@ -1,0 +1,16 @@
+#5. Write a function arr_square() that returns the Array of Squares
+fn arr_square(arr: [i32; 5]) -> [i32; 5] {
+    let mut result = [0; 5];
+    for i in 0..arr.len() {
+        result[i] = arr[i] * arr[i];
+    }
+    result
+}
+
+fn main() {
+    let input = [1, 2, 3, 4, 5];
+    let squared = arr_square(input);
+
+    println!("Original array: {:?}", input);
+    println!("Squared array: {:?}", squared);
+}
